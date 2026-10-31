@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing CA2 Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CloudConnect</h1>
+        <p>Cloud Computing CA2 – Unified Platform Dashboard</p>
+    </header>
+
+    <main>
+        <section class="status-section">
+            <h2>System Status</h2>
+            <div class="status-card">
+                <p>Backend Status: <span id="backend">Checking...</span></p>
+                <p>MongoDB Status: <span id="database">Checking...</span></p>
+            </div>
+        </section>
+
+        <section class="announcement-section">
+            <h2>Publish Announcement</h2>
+            <input type="text" id="title" placeholder="Announcement title">
+            <textarea id="message" placeholder="Write your announcement"></textarea>
+            <button onclick="publishAnnouncement()">Publish</button>
+            <p id="result"></p>
+        </section>
+
+        <section>
+            <h2>Announcements</h2>
+            <div id="announcements">Loading announcements...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cloud Computing CA2 | Powered by MongoDB, Render and Vercel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
